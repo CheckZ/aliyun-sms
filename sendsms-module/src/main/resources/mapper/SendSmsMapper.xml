@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.checkzh.dao.SendSmsDao">
+
+    <resultMap id="BaseResultMap" type="com.checkzh.entities.SmsInfo">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <id column="phone_num" property="phoneNum" jdbcType="VARCHAR"/>
+        <id column="sign_name" property="signName" jdbcType="VARCHAR"/>
+        <id column="template_code" property="templateCode" jdbcType="VARCHAR"/>
+        <id column="accesskey_id" property="accessKeyId" jdbcType="VARCHAR"/>
+        <id column="accesskey_secret" property="accessKeySecret" jdbcType="VARCHAR"/>
+        <id column="regionId" property="regionId" jdbcType="VARCHAR"/>
+        <id column="endpoint" property="endpoint" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findAllSmsInfo" resultMap="BaseResultMap">
+        select * FROM aliyun_sms_info;
+    </select>
+
+</mapper>
