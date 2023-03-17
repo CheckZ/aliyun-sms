@@ -6,7 +6,7 @@
 
 #项目使用流程如下：
 
-#1.创建阿里云账户，进入“短信服务”控制台，在个人账户选择“AccessKey 管理”，使用子账户AccessKey，创建用户组、用户(须记录下自己创建的AccessKey ID和AccessKeySecret(弹出框展示后会找不 		到必须记住否则就要删除重新创建))以及分配权限(选择添加AliyunOSSFullAccess、AliyunDysmsFullAccess权限)
+1.创建阿里云账户，进入“短信服务”控制台，在个人账户选择“AccessKey 管理”，使用子账户AccessKey，创建用户组、用户(须记录下自己创建的AccessKey ID和AccessKeySecret(弹出框展示后会找不 		到必须记住否则就要删除重新创建))以及分配权限(选择添加AliyunOSSFullAccess、AliyunDysmsFullAccess权限)
 
 2.在短信服务控制台“国内消息”进行签名和短信模板的申请，短信模板需关联签名(阿里云赠送的模板无法关联签名)
 
