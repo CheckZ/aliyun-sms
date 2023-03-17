@@ -1,0 +1,14 @@
+CREATE TABLE `aliyun_sms_info`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'ID',
+  `phone_num` varchar(11) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `sign_name` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `template_code` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `accesskey_id` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `accesskey_secret` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `regionId` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `endpoint` varchar(50) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+INSERT INTO `aliyun_sms_info` VALUES
+('13311111111', 'XXX个人博客', 'SMS_111111111', 'LTAI5tASXDPDx6dP6cnzeXXX', 'yxzRyYkTwaXejJZD2Lu5XXXXXXX', NULL, 'dysmsapi.aliyuncs.com');

@@ -38,7 +38,7 @@ public class SendSmsServiceImpl implements SendSmsService {
     @Override
     public CommonResult sendSmsMessage(SmsInfo smsInfo) throws Exception {
         List<SmsInfo> smsInfoList = sendSmsDao.findAllSmsInfo();
-        smsInfoList.stream().filter(s-> "13315915539".equals(s.getPhoneNum()) && "SMS_273605751".equals(s.getTemplateCode())).collect(Collectors.toList());
+        smsInfoList.stream().filter(s-> "13311111111".equals(s.getPhoneNum()) && "SMS_111111111".equals(s.getTemplateCode())).collect(Collectors.toList());
         smsInfo = smsInfoList.get(0);
         Config config = new Config()
                 // 必填，您的 AccessKey ID
