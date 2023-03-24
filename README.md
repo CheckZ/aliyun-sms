@@ -1,6 +1,6 @@
 # aliyun-sms
 
-# 基于spring boot,spring cloud框架，调用阿里云短信服务接口(2023.03.17)功能的demo
+# 基于spring boot,spring cloud框架，调用阿里云短信服务接口(截止2023.03.17的阿狸短信服务API)功能的demo
 
 # 可用于学习交流，禁止任何商业用途
 
